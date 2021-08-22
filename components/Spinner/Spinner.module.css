@@ -1,0 +1,53 @@
+.container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.spinner {
+  margin: 20px auto;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: dodgerblue;
+  height: 80px;
+  margin: 0 2px;
+  width: 8px;
+  display: inline-block;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  animation-delay: -1s;
+}
+
+.spinner .rect4 {
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  animation-delay: -0.8s;
+}
+
+@keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}
